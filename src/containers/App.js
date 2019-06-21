@@ -43,7 +43,7 @@ class App extends Component {
     const { alert } = this.props;
     return (
              <div>
-                    <div className="signup">
+                    <div className="app">
                         {alert.message &&
                             <div className={`alert ${alert.type} alert-dismissible`}>
                             <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>{alert.message}</div>

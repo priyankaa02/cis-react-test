@@ -24,7 +24,10 @@ function login(username, password) {
                 },
                 error => {
                     dispatch(failure(error.toString()));
-                    dispatch(alertActions.error(error.toString()));
+                    dispatch(alertActions.error("Please first register yourself"));
+                    setTimeout(() => {
+                        window.location.reload(true);
+                    }, 2000);
                 }
             );
     };

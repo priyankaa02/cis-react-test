@@ -64,7 +64,7 @@ class Home extends React.Component {
             {invoice &&  invoice.largestInvoice &&
                 <ul>
                     {invoice.largestInvoice.map((user, index) =>
-                     <div>
+                     <div className="report">
                       <div className="card">
                         <div class="card-body">
                           <p className="heading">Name: <span className="content">{user.name}</span></p>
